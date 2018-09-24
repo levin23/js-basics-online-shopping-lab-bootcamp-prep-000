@@ -28,7 +28,7 @@ function viewCart() {
     for(var i=0;i<cart.length-1;i++){
       str+=` ${cart[i].itemName} at $${cart[i].itemPrice},`
     }
-    str+= ` and ${cart[cart.length].itemName} at $${cart[cart.length].itemPrice}.`
+    str+= ` and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
     return str
   }
 }
